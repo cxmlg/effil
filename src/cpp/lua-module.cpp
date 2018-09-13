@@ -107,7 +107,6 @@ int luaopen_effil(lua_State* L) {
             "pairs",        SharedTable::globalLuaPairs,
             "ipairs",       SharedTable::globalLuaIPairs,
             "size",         luaSize,
-            "allow_table_upvalues",    luaAllowTableUpvalues,
             sol::meta_function::index, luaIndex
     );
 
